@@ -148,6 +148,20 @@
   margin-block-end: 20px;
 }
 
+.advices-focus__gallery-title {
+  margin-block-end: 10px;
+}
+
+.advices-focus__gallery-container {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.advices-focus__picture {
+  display: block;
+}
+
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 

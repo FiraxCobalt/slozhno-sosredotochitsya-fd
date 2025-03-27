@@ -45,3 +45,8 @@ a {
   line-height: inherit;
   text-decoration: none;
 }
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
