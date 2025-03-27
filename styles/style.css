@@ -121,7 +121,9 @@
   color: var(--accent-color);
 }
 
-.hard-focus__item:not(:last-of-type) {
+.hard-focus__item:not(:last-of-type),
+.decrease-focus__item:not(:last-of-type),
+.advices-focus__item:not(:last-of-type)  {
   margin-block-end: 20px;
 }
 
@@ -138,7 +140,7 @@
   padding-block-end: 50px;
 }
 
-.decrease-focus__item:not(:last-of-type) {
+.advices-focus__content-title {
   margin-block-end: 20px;
 }
 
