@@ -140,6 +140,10 @@
   padding-block-end: 50px;
 }
 
+.advices-focus__content {
+  margin-block-end: 50px;
+}
+
 .advices-focus__content-title {
   margin-block-end: 20px;
 }
