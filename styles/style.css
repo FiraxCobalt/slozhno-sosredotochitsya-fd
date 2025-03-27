@@ -103,6 +103,20 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.main {
+  padding-block-start: 40px;
+}
+
+.title {
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.title_bottom {
+  margin-block-end: 20px;
+}
+
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
