@@ -5,6 +5,7 @@
 
 :root {
   --accent-color: rgb(255 0 112);
+  --focus-text-color: rgb(219 0 255);
   --title-decor-text: rgb(0 0 40);
   --background-image: url(../images/cover-image-dark.png);
 }
