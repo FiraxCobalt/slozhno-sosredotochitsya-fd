@@ -111,17 +111,14 @@
 }
 
 .hard-focus {
-  padd
+  padding-block-end: 50px;
 }
 
 .title {
+  padding-block-end: 20px;
   font-size: inherit;
   font-weight: 700;
   color: var(--accent-color);
-}
-
-.title_bottom {
-  margin-block-end: 20px;
 }
 
 .hard-focus__item:not(:last-of-type) {
@@ -135,6 +132,14 @@
 
 .term__text {
   color: var(--paragraph-text-color);
+}
+
+.decrease-focus {
+  padding-block-end: 50px;
+}
+
+.decrease-focus__item:not(:last-of-type) {
+  margin-block-end: 20px;
 }
 
 @media (width >= 768px) {
