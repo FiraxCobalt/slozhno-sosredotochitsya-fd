@@ -13,6 +13,8 @@
   padding: 75px 0 66px;
   display: grid;
   position: relative;
+  block-size: 100vb;
+  min-block-size: 668px;
 }
 
 .decorated-zone::before {
@@ -107,7 +109,7 @@
 }
 
 .main {
-  padding-block-start: 40px;
+  padding-block: 40px;
 }
 
 .hard-focus {
@@ -162,8 +164,26 @@
   display: block;
 }
 
+.footer {
+  display: grid;
+  place-content: center;
+  position: relative;
+  block-size: 100vb;
+  min-block-size: 668px;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--focus-text-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
