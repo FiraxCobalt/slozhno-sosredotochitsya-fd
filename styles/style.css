@@ -2,6 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  padding: 0 10px;
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
@@ -9,7 +10,7 @@
 }
 
 .header {
-  padding: 75px 10px 10px;
+  padding: 75px 0 66px;
   display: grid;
   position: relative;
 }
@@ -21,7 +22,7 @@
   border-inline-end: 1px solid var(--accent-color);
   position: absolute;
   inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-inline-end: 0;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -33,7 +34,7 @@
   border-inline-start: 1px solid var(--accent-color);
   position: absolute;
   inset-block-end: 10px;
-  inset-inline-start: 10px;
+  inset-inline-start: 0;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -41,7 +42,7 @@
 .header__text-rec {
   position: absolute;
   inset-block-start: 10px;
-  inset-inline-end: 38px;
+  inset-inline-end: 28px;
   color: var(--accent-color);
   text-transform: uppercase;
 }
@@ -60,6 +61,7 @@
 }
 
 .header__theme-menu {
+  margin-block-end: 65px;
   justify-self: end;
 }
 
@@ -79,6 +81,7 @@
 }
 
 .header__title {
+  margin-block-end: 55px;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -107,6 +110,10 @@
   padding-block-start: 40px;
 }
 
+.hard-focus {
+  padd
+}
+
 .title {
   font-size: inherit;
   font-weight: 700;
@@ -115,6 +122,19 @@
 
 .title_bottom {
   margin-block-end: 20px;
+}
+
+.hard-focus__item:not(:last-of-type) {
+  margin-block-end: 20px;
+}
+
+.term__title {
+  margin-block-end: 10px;
+  font-size: inherit;
+}
+
+.term__text {
+  color: var(--paragraph-text-color);
 }
 
 @media (width >= 768px) {
