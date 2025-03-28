@@ -153,6 +153,7 @@
 
 .advices-focus__content-title {
   margin-block-end: 20px;
+  font-size: 18px;
 }
 
 .advices-focus__gallery-title {
@@ -222,6 +223,28 @@
 
   .decrease-focus__title {
     inline-size: 236px;
+  }
+
+  .advices-focus {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 80px 20px;
+  }
+
+  .advices-focus__title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .advices-focus__content {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .advices-focus__gallery {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
   }
 
   .footer__title {
