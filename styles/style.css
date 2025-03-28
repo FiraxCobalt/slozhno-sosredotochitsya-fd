@@ -63,8 +63,8 @@
 }
 
 .header__theme-menu {
-  margin-block-end: 65px;
   justify-self: end;
+  align-self: start;
 }
 
 .header__theme-menu-item:not(:last-child) {
@@ -83,11 +83,16 @@
 }
 
 .header__title {
-  margin-block-end: 55px;
-  font-weight: 700;
+  align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.83;
+  font-weight: 700;
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--focus-text-color);
+}
+
+.header__text {
+  align-self: end;
 }
 
 .title-decor {
