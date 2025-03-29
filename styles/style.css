@@ -73,7 +73,7 @@
 
 .header__theme-menu-button {
   border: none;
-  padding: 1px 15px;
+  padding: 1px 13px;
   background-color: transparent;
   color: var(--accent-color);
 }
@@ -313,5 +313,26 @@
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 0.83;
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    padding: 20px 0 135px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    inline-size: 230px;
+  }
+
+  .header__theme-menu-item:not(:last-child) {
+    margin-block-end: 0;
   }
 }
