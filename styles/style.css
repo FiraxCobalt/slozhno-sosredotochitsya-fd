@@ -99,6 +99,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--nav-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -136,6 +137,14 @@
 
 .term__link_showed {
   text-shadow: 2px 2px 0 var(--section-heading-color);
+}
+
+.term__link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.term__link:focus-visible {
+  outline: 1px solid var(--main-text-color);
 }
 
 .main {
