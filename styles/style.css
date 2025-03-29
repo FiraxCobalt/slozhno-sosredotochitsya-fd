@@ -158,6 +158,7 @@
 
 .advices-focus__gallery-title {
   margin-block-end: 10px;
+  font-size: inherit;
 }
 
 .advices-focus__gallery-container {
@@ -239,7 +240,7 @@
 
   .advices-focus {
     display: grid;
-    grid-template-columns: 236px 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, auto);
     gap: 80px 20px;
   }
@@ -359,8 +360,11 @@
   }
 
   .hard-focus__item:not(:last-of-type), 
-  .decrease-focus__item:not(:last-of-type), 
-  .advices-focus__item:not(:last-of-type) {
+  .decrease-focus__item:not(:last-of-type)  {
     margin-block-end: 0;
-}
+  }
+
+  .advices-focus__gallery-container {
+    grid-template-rows: 260px 315px 433px;
+  }
 }
