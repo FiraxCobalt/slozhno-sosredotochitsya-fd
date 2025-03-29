@@ -89,6 +89,7 @@
 
 .header__theme-menu-button:hover {
   border-color: var(--nav-hover-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -128,7 +129,11 @@
   font-weight: 400;
 }
 
-.term__link {
+.term__link_find-out {
+  text-shadow: 3px 1px 0 var(--section-heading-color);
+}
+
+.term__link_showed {
   text-shadow: 2px 2px 0 var(--section-heading-color);
 }
 
@@ -238,6 +243,11 @@
 
   .main {
     padding-block: 60px;
+  }
+
+  .term__link_find-out,
+  .term__link_showed {
+    text-shadow: 3px 2px 0 var(--section-heading-color);
   }
 
   .hard-focus {
@@ -364,6 +374,10 @@
 
   .header__title {
     align-self: end;
+  }
+
+  .term__link_showed {
+    text-shadow: 3px 3px 0 var(--section-heading-color);
   }
 
   .hard-focus {
