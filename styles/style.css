@@ -132,11 +132,11 @@
 }
 
 .term__link_find-out {
-  text-shadow: 3px 1px 0 var(--section-heading-color);
+  text-shadow: 3px 1px 0 var(--accent-color);
 }
 
 .term__link_showed {
-  text-shadow: 2px 2px 0 var(--section-heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .term__link:hover {
@@ -257,7 +257,7 @@
 
   .term__link_find-out,
   .term__link_showed {
-    text-shadow: 3px 2px 0 var(--section-heading-color);
+    text-shadow: 3px 2px 0 var(--accent-color);
   }
 
   .hard-focus {
@@ -387,7 +387,7 @@
   }
 
   .term__link_showed {
-    text-shadow: 3px 3px 0 var(--section-heading-color);
+    text-shadow: 3px 3px 0 var(--accent-color);
   }
 
   .hard-focus {
