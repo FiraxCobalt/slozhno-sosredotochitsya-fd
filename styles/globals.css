@@ -46,6 +46,11 @@ a {
   text-decoration: none;
 }
 
+button:focus,
+a:focus {
+  outline: none;
+}
+
 img {
   max-inline-size: 100%;
   block-size: auto;

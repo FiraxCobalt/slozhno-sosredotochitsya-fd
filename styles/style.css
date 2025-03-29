@@ -80,6 +80,10 @@
   background-color: transparent;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
 }
@@ -207,6 +211,7 @@
   }
 
   .header__text-rec {
+    display: block;
     inset-block-start: 20px;
   }
 
