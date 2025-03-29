@@ -10,19 +10,19 @@
 }
 
 .header {
-  padding: 75px 0 66px;
-  display: grid;
   position: relative;
+  display: grid;
+  padding: 75px 0 66px;
   block-size: 100vb;
   min-block-size: 668px;
 }
 
 .decorated-zone::before {
   content: '';
-  display: inline-block;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
   position: absolute;
+  display: inline-block;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
   inset-block-start: 10px;
   inset-inline-end: 0;
   inline-size: 25px;
@@ -31,10 +31,10 @@
 
 .decorated-zone::after {
   content: '';
-  display: inline-block;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
   position: absolute;
+  display: inline-block;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
   inset-block-end: 10px;
   inset-inline-start: 0;
   inline-size: 25px;
@@ -43,21 +43,21 @@
 
 .header__text-rec {
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 28px;
   color: var(--accent-color);
   text-transform: uppercase;
+  inset-block-start: 10px;
+  inset-inline-end: 28px;
 }
 
 .header__text-rec::after {
   content: '';
+  position: absolute;
   display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
-  position: absolute;
     inset-block-start: 8px;
     inset-inline-end: -18px;
 }
@@ -74,8 +74,8 @@
 .header__theme-menu-button {
   border: none;
   padding: 1px 13px;
-  background-color: transparent;
   color: var(--accent-color);
+  background-color: transparent;
 }
 
 .header__theme-menu-button_active {
@@ -84,11 +84,11 @@
 
 .header__title {
   align-self: center;
+  color: var(--focus-text-color);
+  font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
-  font-weight: 700;
   text-shadow: 4px 4px 0 var(--accent-color);
-  color: var(--focus-text-color);
 }
 
 .header__text {
@@ -96,9 +96,9 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
-  font-weight: 700;
   color: var(--title-decor-text);
+  font-weight: 700;
+  background-color: var(--accent-color);
 }
 
 .title-decor_normal {
@@ -123,9 +123,9 @@
 
 .title {
   padding-block-end: 20px;
-  font-size: inherit;
-  font-weight: 700;
   color: var(--accent-color);
+  font-weight: 700;
+  font-size: inherit;
 }
 
 .hard-focus__item:not(:last-of-type),
@@ -171,16 +171,16 @@
 }
 
 .footer {
+  position: relative;
   display: grid;
   place-content: center;
-  position: relative;
   block-size: 100vb;
   min-block-size: 668px;
 }
 
 .footer__title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--focus-text-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -210,8 +210,8 @@
   }
 
   .header__text {
-    inline-size: 50%;
     justify-self: end;
+    inline-size: 50%;
   }
 
   .main {
@@ -219,10 +219,10 @@
   }
 
   .hard-focus {
-    padding-block-end: 80px;
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
+    padding-block-end: 80px;
   }
 
   .hard-focus__title {
@@ -272,46 +272,46 @@
   .advices-focus__picture_sunset {
     grid-column: 2 span;
     grid-row: 1 / 2;
-    block-size: 100%;
-    inline-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
   }
 
   .advices-focus__picture_ice-cream {
     grid-column: 3 / -1;
     grid-row: 2 span;
-    block-size: 100%;
-    inline-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
   }
 
   .advices-focus__picture_tape {
     grid-column: 1 / 2;
     grid-row: 2 / 2 span;
-    block-size: 100%;
-    inline-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
   }
 
   .advices-focus__picture_books {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    block-size: 100%;
-    inline-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
   }
 
   .advices-focus__picture_street {
     grid-column: 2 / 2 span;
     grid-row: 3 / -1;
-    block-size: 100%;
-    inline-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
   }
 
   .footer__title {
