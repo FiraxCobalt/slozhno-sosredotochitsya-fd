@@ -78,14 +78,21 @@
 }
 
 .header__theme-menu-button {
-  border: none;
+  border: 1px solid transparent;
   padding: 1px 13px;
+  min-inline-size: 70px;
+  max-inline-size: 140px;
+  min-block-size: 26px;
   color: var(--nav-color);
   background-color: transparent;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--nav-hover-color);
+  border-color: var(--nav-hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: var(--nav-color);
 }
 
 .header__theme-menu-button_active {
@@ -347,8 +354,8 @@
   .header__theme-menu-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    inline-size: 230px;
+    gap: 9px;
+    inline-size: 231px;
   }
 
   .header__theme-menu-item:not(:last-child) {
