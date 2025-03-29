@@ -294,6 +294,7 @@
   }
 
   .advices-focus__content {
+    margin-block-end: 0;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
   }
@@ -371,6 +372,7 @@
 @media (width >= 1024px) {
   .header {
     padding: 20px 0 134px;
+    grid-template-rows: 5fr 4fr min-content;
     min-block-size: 768px;
   }
 
@@ -390,7 +392,7 @@
   }
 
   .header__title {
-    align-self: end;
+    align-self: start;
   }
 
   .term__link_showed {
@@ -399,6 +401,10 @@
 
   .hard-focus {
     grid-template-columns: 315px 1fr;
+  }
+
+  .advices-focus {
+    gap: 80px 11px;
   }
 
   .decrease-focus__title {
