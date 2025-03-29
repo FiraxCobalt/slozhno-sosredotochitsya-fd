@@ -14,6 +14,7 @@
   --main-text-color: #f1b2ce;
   --nav-color: #ff0070;
   --nav-hover-color: rgb(255 0 112 / 0.4);
+  --main-accent-text-color: #FF0070;
   --main-heading-color: #000028;
   --section-heading-color: #ff0070;
   --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* 116px - 120px */
