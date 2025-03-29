@@ -19,7 +19,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 75px 0 66px;
-  block-size: 100vb;
+  /* block-size: 100vb; */
   min-block-size: 668px;
 }
 
@@ -85,6 +85,7 @@
   max-inline-size: 140px;
   min-block-size: 26px;
   color: var(--nav-color);
+  line-height: 1;
   background-color: transparent;
 }
 
@@ -209,7 +210,7 @@
   position: relative;
   display: grid;
   place-content: center;
-  block-size: 100vb;
+  /* block-size: 100vb; */
   min-block-size: 668px;
 }
 
@@ -226,6 +227,7 @@
 
   .header {
     padding: 192px 0 183px;
+    min-block-size: 1024px;
   }
   
   .decorated-zone::before {
@@ -356,6 +358,10 @@
     inline-size: 100%;
   }
 
+  .footer {
+    min-block-size: 1024px;
+  }
+
   .footer__title {
     font-size: var(--footer-logo-size);
     line-height: 0.83;
@@ -365,6 +371,7 @@
 @media (width >= 1024px) {
   .header {
     padding: 20px 0 134px;
+    min-block-size: 768px;
   }
 
   .header__theme-menu {
@@ -406,5 +413,9 @@
 
   .advices-focus__gallery-container {
     grid-template-rows: 260px 315px 433px;
+  }
+
+  .footer {
+    min-block-size: 768px;
   }
 }
