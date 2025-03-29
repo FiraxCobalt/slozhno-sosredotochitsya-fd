@@ -221,7 +221,7 @@
 
   .hard-focus {
     display: grid;
-    grid-template-columns: 236px 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
     padding-block-end: 80px;
   }
