@@ -193,6 +193,14 @@
     padding: 192px 0 183px;
   }
 
+  .decorated-zone::before {
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+  }
+
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
   }
@@ -304,5 +312,6 @@
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    line-height: 0.83;
   }
 }
