@@ -344,7 +344,7 @@
     align-self: end;
   }
 
-  /* .header__text {
-    inline-size: 491px;
-  } */
+  .hard-focus {
+    grid-template-columns: 315px 1fr;
+  }
 }
