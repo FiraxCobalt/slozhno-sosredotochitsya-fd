@@ -16,6 +16,7 @@
   --section-heading-color: #353430;
   --header-logo-color: #FFC2E6;
   --footer-logo-color: #FFC2E6;
+  --footer-text-shadow-color: #FF8DCB;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,6 +32,7 @@
   --section-heading-color: #353430;
   --header-logo-color: #FFC2E6;
   --footer-logo-color: #FFC2E6;
+  --footer-text-shadow-color: #FF8DCB;
   }
 
   .header__text-rec {
@@ -40,4 +42,18 @@
 
 .theme-light .header__text-rec {
   display: none;
+}
+
+@media (width >= 1024px) {
+  :root.theme-light {
+    --footer-text-shadow-color: #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  @media (width >= 1024px) {
+    :root {
+      --footer-text-shadow-color: #FF0070;
+    }
+  }
 }

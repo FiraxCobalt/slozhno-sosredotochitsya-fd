@@ -217,7 +217,7 @@
 .footer__title {
   color: var(--footer-logo-color);
   font-size: var(--footer-logo-size);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--footer-text-shadow-color);
 }
 
 @media (width >= 768px) {
@@ -424,4 +424,5 @@
   .footer {
     min-block-size: 768px;
   }
+
 }

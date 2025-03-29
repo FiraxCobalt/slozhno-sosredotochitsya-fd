@@ -16,6 +16,7 @@
   --section-heading-color: #ff0070;
   --header-logo-color: #db00ff;
   --footer-logo-color: #db00ff;
+  --footer-text-shadow-color: #FF0070;
 }
 
 .theme-dark .header__text-rec {
