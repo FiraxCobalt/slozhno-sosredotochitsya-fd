@@ -170,6 +170,12 @@
   font-size: var(--main-font-size);
 }
 
+.term__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .term__text {
   font-weight: 400;
   color: var(--main-text-color);
