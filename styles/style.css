@@ -129,6 +129,12 @@
   font-weight: 400;
 }
 
+.card__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .card__text a {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
