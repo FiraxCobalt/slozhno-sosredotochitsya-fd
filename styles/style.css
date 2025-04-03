@@ -19,7 +19,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 75px 0 66px;
-  /* block-size: 100vb; */
+  block-size: 100vb;
   min-block-size: 668px;
 }
 
@@ -84,6 +84,7 @@
   min-inline-size: 70px;
   max-inline-size: 140px;
   min-block-size: 26px;
+  text-transform: lowercase;
   color: var(--nav-color);
   line-height: 1;
   background-color: transparent;
@@ -207,6 +208,9 @@
 
 .advices-focus__picture {
   display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
   inline-size: 100%;
 }
 
@@ -214,7 +218,7 @@
   position: relative;
   display: grid;
   place-content: center;
-  /* block-size: 100vb; */
+  block-size: 100vb;
   min-block-size: 668px;
 }
 
@@ -231,7 +235,6 @@
 
   .header {
     padding: 192px 0 183px;
-    min-block-size: 1024px;
   }
 
   .decorated-zone::before {
@@ -321,50 +324,26 @@
   .advices-focus__picture_sunset {
     grid-column: 2 span;
     grid-row: 1 / 2;
-    object-fit: cover;
-    object-position: center;
-    block-size: 100%;
-    inline-size: 100%;
   }
 
   .advices-focus__picture_ice-cream {
     grid-column: 3 / -1;
     grid-row: 2 span;
-    object-fit: cover;
-    object-position: center;
-    block-size: 100%;
-    inline-size: 100%;
   }
 
   .advices-focus__picture_tape {
     grid-column: 1 / 2;
     grid-row: 2 / 2 span;
-    object-fit: cover;
-    object-position: center;
-    block-size: 100%;
-    inline-size: 100%;
   }
 
   .advices-focus__picture_books {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    object-fit: cover;
-    object-position: center;
-    block-size: 100%;
-    inline-size: 100%;
   }
 
   .advices-focus__picture_street {
     grid-column: 2 / 2 span;
     grid-row: 3 / -1;
-    object-fit: cover;
-    object-position: center;
-    block-size: 100%;
-    inline-size: 100%;
-  }
-
-  .footer {
-    min-block-size: 1024px;
   }
 
   .footer__title {
@@ -377,7 +356,6 @@
   .header {
     padding: 20px 0 134px;
     grid-template-rows: 5fr 4fr min-content;
-    min-block-size: 768px;
   }
 
   .header__theme-menu {
@@ -423,9 +401,5 @@
 
   .advices-focus__gallery-container {
     grid-template-rows: 260px 315px 433px;
-  }
-
-  .footer {
-    min-block-size: 768px;
   }
 }
