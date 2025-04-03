@@ -1,5 +1,16 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.visually-hidden {
+  position: absolute; 
+  width: 1px; 
+  height: 1px;
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  overflow: hidden; 
+} 
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   padding: 0 10px;
@@ -129,7 +140,7 @@
   font-weight: 400;
 }
 
-.term__link_find-out {
+/* .term__link_find-out {
   text-shadow: 3px 1px 0 var(--accent-color);
 }
 
@@ -143,7 +154,7 @@
 
 .term__link:focus-visible {
   outline: 1px solid var(--main-text-color);
-}
+} */
 
 .main {
   padding-block: 40px;
@@ -152,43 +163,11 @@
   row-gap: 50px;
 }
 
-
-
-.hard-focus {
-
-}
-
-.title {
-  padding-block-end: 20px;
-  color: var(--section-heading-color);
+.section-title {
+  margin-block-end: 20px;
   font-weight: 700;
   font-size: var(--main-font-size);
-}
-
-.hard-focus__item:not(:last-of-type),
-.decrease-focus__item:not(:last-of-type),
-.advices-focus__item:not(:last-of-type) {
-  margin-block-end: 20px;
-}
-
-.term__title {
-  margin-block-end: 10px;
-  font-size: var(--main-font-size);
-}
-
-.term__text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.term__text {
-  font-weight: 400;
-  color: var(--main-text-color);
-}
-
-.decrease-focus {
-
+  color: var(--section-heading-color);
 }
 
 .advices-focus__content {
@@ -200,7 +179,7 @@
   font-size: var(--main-font-size);
 }
 
-.gallery__title{
+.gallery__title {
   margin-block-end: 10px;
   font-size: var(--main-font-size);
 }
@@ -270,40 +249,19 @@
     row-gap: 80px;
   }
 
-  .term__link_find-out,
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content-section_full-width {
+    grid-template-columns: auto;
+  }
+
+  /* .term__link_find-out,
   .term__link_showed {
     text-shadow: 3px 2px 0 var(--accent-color);
-  }
-
-  .hard-focus {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--main-gap);
-  }
-
-  .hard-focus__title {
-    padding: 0;
-  }
-
-  .decrease-focus {
-    
-  }
-
-  .decrease-focus__title {
-    inline-size: 236px;
-  }
-
-  .advices-focus {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, auto);
-    column-gap: 20px;
-  }
-
-  .advices-focus__title {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+  } */
 
   .advices-focus__content {
     margin-block-end: 0;
@@ -377,17 +335,9 @@
     align-self: start;
   }
 
-  .term__link_showed {
+  /* .term__link_showed {
     text-shadow: 3px 3px 0 var(--accent-color);
-  }
-
-  .hard-focus {
-    grid-template-columns: 315px 1fr;
-  }
-
-  .advices-focus {
-    column-gap: 20px;
-  }
+  } */
 
   .decrease-focus__title {
     inline-size: 315px;
