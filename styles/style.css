@@ -1,16 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-.visually-hidden {
-  position: absolute; 
-  width: 1px; 
-  height: 1px;
-  margin: -1px; 
-  padding: 0; 
-  border: 0; 
-  clip: rect(0 0 0 0); 
-  overflow: hidden; 
-} 
-
 .page {
   padding: 0 10px;
   background-color: var(--main-bg-color);
