@@ -147,10 +147,15 @@
 
 .main {
   padding-block: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
+
+
 .hard-focus {
-  padding-block-end: 50px;
+
 }
 
 .title {
@@ -183,7 +188,7 @@
 }
 
 .decrease-focus {
-  padding-block-end: 50px;
+
 }
 
 .advices-focus__content {
@@ -195,18 +200,18 @@
   font-size: var(--main-font-size);
 }
 
-.advices-focus__gallery-title {
+.gallery__title{
   margin-block-end: 10px;
   font-size: var(--main-font-size);
 }
 
-.advices-focus__gallery-container {
+.gallery__container {
   display: grid;
   justify-items: center;
   gap: var(--main-gap);
 }
 
-.advices-focus__picture {
+.gallery__picture {
   display: block;
   object-fit: cover;
   object-position: center;
@@ -262,6 +267,7 @@
 
   .main {
     padding-block: 60px;
+    row-gap: 80px;
   }
 
   .term__link_find-out,
@@ -273,7 +279,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--main-gap);
-    padding-block-end: 80px;
   }
 
   .hard-focus__title {
@@ -281,7 +286,7 @@
   }
 
   .decrease-focus {
-    padding-block-end: 80px;
+    
   }
 
   .decrease-focus__title {
@@ -292,7 +297,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, auto);
-    gap: 80px 20px;
+    column-gap: 20px;
   }
 
   .advices-focus__title {
@@ -306,42 +311,37 @@
     grid-row: 1 / 2;
   }
 
-  .advices-focus__gallery {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
-  }
-
-  .advices-focus__gallery-title {
+  .gallery__title {
     margin-block-end: 20px;
   }
 
-  .advices-focus__gallery-container {
+  .gallery__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 192px 230px 318px;
     gap: 20px;
   }
 
-  .advices-focus__picture_sunset {
+  .gallery__picture_sunset {
     grid-column: 2 span;
     grid-row: 1 / 2;
   }
 
-  .advices-focus__picture_ice-cream {
+  .gallery__picture_ice-cream {
     grid-column: 3 / -1;
     grid-row: 2 span;
   }
 
-  .advices-focus__picture_tape {
+  .gallery__picture_tape {
     grid-column: 1 / 2;
     grid-row: 2 / 2 span;
   }
 
-  .advices-focus__picture_books {
+  .gallery__picture_books {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 
-  .advices-focus__picture_street {
+  .gallery__picture_street {
     grid-column: 2 / 2 span;
     grid-row: 3 / -1;
   }
@@ -386,7 +386,7 @@
   }
 
   .advices-focus {
-    gap: 80px 11px;
+    column-gap: 20px;
   }
 
   .decrease-focus__title {
@@ -399,7 +399,7 @@
     gap: 30px 20px;
   }
 
-  .advices-focus__gallery-container {
+  .gallery__container {
     grid-template-rows: 260px 315px 433px;
   }
 }
