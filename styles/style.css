@@ -27,8 +27,8 @@
   content: "";
   position: absolute;
   display: inline-block;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decorated-zone-color);
+  border-block-start: 1px solid var(--decorated-zone-color);
   inset-block-start: 10px;
   inset-inline-end: 0;
   inline-size: 25px;
@@ -39,8 +39,8 @@
   content: "";
   position: absolute;
   display: inline-block;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decorated-zone-color);
+  border-block-end: 1px solid var(--decorated-zone-color);
   inset-block-end: 10px;
   inset-inline-start: 0;
   inline-size: 25px;

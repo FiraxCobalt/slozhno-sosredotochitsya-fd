@@ -6,6 +6,7 @@
 
 :root.theme-dark {
   --accent-color: #FF0070;
+  --decorated-zone-color: #FF0070;
   --main-bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --main-text-color: #f1b2ce;
